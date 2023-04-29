@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+
+
+
+    ">
+  <title>Wedding Website</title>
+</head>
+<style>
+
+  *img {
+    align-items: center;
+    text-align: center;
+  }
+  .nav {
+    background-color: #f7c8e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+
+  }
+
+  h1 {
+    padding: 0px 20px;
+    color: #E97777;
+  }
+
+  .center {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 20px;
+
+  }
+
+  .center li {
+    padding: 0px 60px;
+    list-style: none;
+
+
+  }
+
+  .center li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #E97777;
+  }
+
+  .center li a:hover{
+     color: #FFD966;
+     
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .left li {
+    padding: 0px 20px;
+    list-style: none;
+    align-items: center;
+    color: #E97777;
+    font-size: 20px;
+  }
+
+
+  .container {
+    text-align: center;
+    margin: 20px 0px;
+    background-color: #f7c8e0;
+    padding: 60px;
+  }
+
+  .para {
+    padding: 20px;
+    font-size: 20px;
+    color: #E97777;
+
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #FFD966;
+    border-radius: 10px;
+    color: #E97777;
+    border-color: inherit;
+
+  }
+
+  .allcard {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0px;
+
+  }
+
+
+  .card01 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn {
+    text-align: center;
+    padding-bottom: 30px;
+
+
+  }
+
+
+  .card02 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img01 {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn01 {
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+
+  .card03 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img02 {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn02 {
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+
+  .card04 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img03 {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn03 {
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+
+
+  .allcard2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+  }
+
+
+  .card05 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img04 {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn04 {
+    text-align: center;
+    padding-bottom: 30px;
+
+
+  }
+
+
+  .card06 {
+    background-color: #f7c8e0;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0px 30px;
+
+  }
+
+
+  .img05 {
+
+    text-align: center;
+    padding: 30px;
+  }
+
+  .butn05 {
+    text-align: center;
+    padding-bottom: 30px;
+
+
+  }
+
+  .container02 {
+    text-align: center;
+    margin: 50px 0px;
+    background-color: #f7c8e0;
+    padding: 60px;
+  }
+
+  .container02 p {
+    font-size: 20px;
+    color: #E97777;
+  }
+
+  .container02 ul {
+    display: inline-block;
+    text-align: left;
+    /* padding-left: 50px; */
+
+
+  }
+
+  .container02 ul li {
+    color: #E97777;
+    list-style: none;
+    margin: 10px;
+
+  }
+
+  .span {
+    background-color: #FFD966;
+    border-radius: 20px;
+    margin-right: 10px;
+
+  }
+
+
+  .container03 {
+    display: inline;
+  }
+
+  .box03 {
+    width: 35%;
+    text-align: center;
+    margin: 0px 37px;
+    background-color: #f7c8e0;
+    padding: 60px;
+    float: left;
+    border-radius: 10px;
+  }
+
+  .img10 {
+    width: 35%;
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #f7c8e0 ; */
+    padding: 0px 50px;
+    float: right;
+  }
+
+  .para03 {
+    padding: 20px;
+    font-size: 20px;
+    color: #E97777;
+
+  }
+
+  .button03 {
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color: #FFD966;
+    border-radius: 10px;
+    color: #E97777;
+    border-color: inherit;
+
+  }
+
+  .container12 {
+    display: block;
+  }
+
+
+  .img12 {
+    float: right;
+    background-color: #f7c8e0;
+    border-radius: 10px;
+    width: 40;
+    text-align: center;
+    justify-content: center;
+    align-items: c;
+    padding: 30px 23px;
+    margin: 50px 36px;
+  }
+
+  .img11 {
+    float: left;
+    width: 35%;
+    margin: 45px 38px;
+  }
+
+
+  .container13 {
+    display: flex;
+    margin: 0px 0px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7c8e0;
+    padding: 0px 30px;
+  }
+
+  .box13 {
+    text-align: center;
+  }
+
+  .img13 {
+    padding: 0px 40px;
+    padding-top: 0px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .paragraph {
+    font-size: 20px;
+    color: #E97777;
+  }
+
+  .dashedborder {
+    border-bottom: 1px dashed #E97777;
+    padding: 10px 0px;
+
+  }
+
+  /* .dashedborder {
+    border: 1px solid dashed black;
+  } */
+
+  .container14 {
+    display: flex;
+    margin: 0px 0px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7c8e0;
+    padding: 0px 30px;
+  }
+
+  .box14 {
+    text-align: center;
+  }
+
+  .img14 {
+    padding: 0px 40px;
+    padding-top: 0px;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+
+  }
+
+  .paragraph14 {
+    font-size: 20px;
+    color: #E97777;
+  }
+
+  .dashedborder02 {
+    border-bottom: 1px dashed #E97777;
+    padding: 10px 0px;
+
+  }
+
+
+  .container15 {
+    display: flex;
+    margin: 0px 0px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7c8e0;
+    padding: 0px 30px;
+  }
+
+  .box15 {
+    text-align: center;
+  }
+
+  .img15 {
+    padding: 0px 40px;
+    padding-top: 0px;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+
+  }
+
+  .paragraph15 {
+    font-size: 20px;
+    color: #E97777;
+  }
+
+  .dashedborder03 {
+    border-bottom: 1px dashed #E97777;
+    padding: 10px 0px;
+
+  }
+
+
+  .container16 {
+    display: flex;
+    margin: 0px 0px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7c8e0;
+    padding: 0px 30px;
+  }
+
+  .box16 {
+    text-align: center;
+  }
+
+  .img16 {
+    padding: 0px 40px;
+    padding-top: 0px;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+
+  }
+
+  .paragraph16 {
+    font-size: 20px;
+    color: #E97777;
+  }
+
+  .dashedborder04 {
+    border-bottom: 1px dashed #E97777;
+    padding: 10px 0px;
+
+  }
+
+  .footer {
+    display: inline-flex;
+    background-color: #f7c8e0;
+    margin: 50px 0px;
+    padding: 40px 0px;
+  }
+
+  .start {
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    padding-left: 10px;
+    color: #E97777;
+
+  }
+
+  .ul01 {
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    color: #E97777;
+
+  }
+
+  .ul01 li {
+    list-style: none;
+    color: #E97777;
+    padding: 5px 0px;
+  }
+
+  .ul02 {
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    color: #E97777;
+  }
+
+  .ul02 li {
+    list-style: none;
+    color: #E97777;
+    padding: 5px 0px;
+  }
+
+  .ul03 {
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    color: #E97777;
+
+  }
+
+  .ul03 li {
+    list-style: none;
+    color: #E97777;
+    padding: 5px 0px;
+  }
+
+  .parafooter01 {
+    padding: 2px 0px;
+
+    line-height: 25px;
+  }
+
+  .headingsecond {
+    padding-bottom: 12px;
+  }
+
+
+  .stayconnect {
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    color: #E97777;
+
+  }
+
+  .socialicon {
+    list-style: none;
+    color: #E97777;
+    padding: 0px 0px;
+  }
+
+  .stayconnect ul {
+    list-style: none;
+
+
+  }
+
+  .ulinimg li img {
+    padding-top: 15px;
+    /* padding-bottom: 2px; */
+
+  }
+
+  .info {
+    display: flex;
+    width: 45%;
+    /* float: right; */
+
+  }
+
+  .info p {
+    color: #E97777;
+    border-bottom: 1px dashed #E97777;
+    padding-bottom: 20px;
+  }
+
+  .img001 {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+  .img002 {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+
+  .info02 {
+    display: flex;
+    width: 45%;
+    /* float: left; */
+    padding-left: 90px;
+  }
+
+  .info02 p {
+    color: #E97777;
+    border-bottom: 1px dashed #E97777;
+    padding-bottom: 20px;
+  }
+
+  .info03 {
+    display: flex;
+    width: 45%;
+  }
+
+  .info03 p {
+    color: #E97777;
+  }
+
+  .information {
+    display: flex;
+    background-color: #f7c8e0;
+
+    padding: 25px 0px;
+  }
+
+  .info1 {
+    text-align: center;
+  }
+
+  .info2 {
+    text-align: center;
+  }
+
+  .link{
+    text-decoration: none;
+  }
+  .link h1:hover{
+    text-decoration: none;
+    color: #FFD966
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <h1>Celebrare</h1>
+      <ul class="center">
+        <li> <a href="">Wedding Invitation</a></li>
+        <li><a href="">Video Invitation</a> </li>
+      </ul>
+
+      <ul class="left">
+        <li>English</li>
+        <li>login</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <h1>Wedding Invitation Card</h1>
+      <p class="para">Select your design, Add your text and images,<br>
+        easily share this is in PDF
+        <br> or get it printed
+      </p>
+      <button class="button">View all Cards</button>
+    </div>
+  </div>
+  <div class="allcard">
+    <div class="card01">
+      <div class="img"><img src="img/1.png" alt=""></div>
+      <div class="butn">
+        <button class="button">Royal Invitaion</button>
+      </div>
+
+    </div>
+
+    <div class="card02">
+      <div class="img01"><img src="img/2.png" alt=""></div>
+      <div class="butn01">
+        <button class="button">Explore All Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card03">
+      <div class="img02"><img src="img/3.png" alt=""></div>
+      <div class="butn02">
+        <button class="button">General Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card04">
+      <div class="img03"><img src="img/4.png" alt=""></div>
+      <div class="butn03">
+        <button class="button">Hindu Invitation</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="allcard2">
+    <div class="card05">
+      <div class="img04"><img src="img/5.png" alt=""></div>
+      <div class="butn04">
+        <button class="button">Muslim Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card06">
+      <div class="img05"><img src="img/6.png" alt=""></div>
+      <div class="butn05">
+        <button class="button">Sikh Invitation</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container02">
+    <div class="box02">
+      <h1>Easily Print or send Online</h1>
+      <p class="para02">Create personalized cards for the people you card about</p>
+      <ul>
+        <li> <span class="span"><i class="fa-sharp fa-solid fa-circle-check"></i></span> Choose from 1000’s of designs,
+          add text and photos</li>
+        <li><span class="span"><i class="fa-sharp fa-solid fa-circle-check"></i></span> Print form your browser of
+          download as PDF</li>
+        <li><span class="span"><i class="fa-sharp fa-solid fa-circle-check"></i></span> Send via email text Message of
+          Facebook</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="allcard">
+    <div class="card01">
+      <div class="img"><img src="img/7.png" alt=""></div>
+      <div class="butn">
+        <button class="button">South Indian Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card02">
+      <div class="img01"><img src="img/8.png" alt=""></div>
+      <div class="butn01">
+        <button class="button">Buddha Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card03">
+      <div class="img02"><img src="img/9.png" alt=""></div>
+      <div class="butn02">
+        <button class="button">Marathi Invitation</button>
+      </div>
+
+    </div>
+
+    <div class="card04">
+      <div class="img03"><img src="img/10.png" alt=""></div>
+      <div class="butn03">
+        <button class="button">Bengali Invitation</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="information">
+    <a href=""><div class="info">
+      <div class="img001"><img src="img/icon 1.png" alt=""></div>
+      <div class="info1">
+       <a class="link" href=""><h1>Unique Wedding Cards</h1></a> 
+        <p>Our collection of wedding cards is perfect for couples who want to set their big day apart from the rest. Our
+          cards
+          are unique, elegant, and customizable, making them the perfect choice for any wedding.</p>
+
+      </div>
+    </div>
+  </a>
+   
+  <a href=""><div class="info02">
+      <div class="img002"><img src="img/icon 2.png" alt=""></div>
+      <div class="info2">
+       <a class="link"href=""><h1>High-Quality Designs</h1></a> 
+        <p>At Celebrare, we believe that every couple deserves
+          a beautiful wedding invitation that reflects their
+          personality and style. That's why our collection
+          features high-quality designs that are sure to
+          impress your guests.</p>
+
+      </div>
+    </div>
+
+  </div>
+</a>
+
+
+  <div class="information">
+   <a href=""><div class="info">
+      <div class="img001"><img src="img/icon 3.png" alt=""></div>
+      <div class="info1">
+       <a class="link"href=""><h1>Customizable Options</h1></a> 
+        <p>We understand that every couple is unique, which is why we offer customizable options to make your wedding
+          invitation truly your own. From color schemes to font choices,our team can help you create a wedding
+          invitation that reflects your individuality.</p>
+
+      </div>
+    </div>
+  </a> 
+    <a href=""><div class="info02">
+      <div class="img002"><img src="img/icon 4.png" alt=""></div>
+      <div class="info2">
+        <a class="link"href=""><h1>Personalized Service</h1></a>
+        <p>Our team of experts is dedicated to providing personalized service to each and every one of our clients. From
+          the initial consultation to the final product, we are here to ensure that your wedding invitation is
+          everything you want it to be.</p>
+
+      </div>
+    </div>
+  </a>
+
+  </div>
+  <div class="information">
+    <a href=""><div class="info">
+      <div class="img001"><img src="img/icon 5.png" alt=""></div>
+      <div class="info1">
+       <a class="link" href=""> <h1>Fast Turnaround Times</h1></a>
+        <p>We understand that time is of the essence when it comes to wedding planning,which is why we offer fast
+          turnaround times on all of our orders. You can have your wedding invitations in your hands in no time.</p>
+
+      </div>
+    </div>
+  </a>
+   <a href=""><div class="info02">
+      <div class="img002"><img src="img/icon 6.png" alt=""></div>
+      <div class="info2">
+       <a class="link" href=""><h1>Affordable Prices</h1></a> 
+        <p>We believe that every couple should have access to beautiful wedding invitations, which is why we offer our
+          collection at affordable prices. You can have a
+          stunning wedding invitation without breaking the bank.</p>
+
+      </div>
+    </div>
+
+  </div>
+</a> 
+
+
+  <div class="footer">
+    <div class="start">
+      <h2>Celebrare</h2>
+
+      <div class="parafooter01">
+        <p>Celebrare is a startup by Alumni of IIT Hyderabad working in the digital India sector to transform wedding
+          invitations market. We have 3,00,000+ app downloads on play store.</p>
+      </div>
+    </div>
+
+    <div class="ul01">
+      <ul>
+        <h2 class="headingsecond"> Card Categories</h2>
+        <li>All</li>
+        <li>Royal</li>
+        <li>Hindu</li>
+        <li>South Indian</li>
+        <li>Buddha</li>
+        <li>Muslim</li>
+        <li>Sikh</li>
+      </ul>
+    </div>
+
+    <div class="ul02">
+      <ul>
+        <h2 class="headingsecond"> Policy</h2>
+        <li>Privacy Policy</li>
+        <li>Term of use</li>
+        <li>Return </li>
+        <li>Shipping</li>
+        <li>Cancelation</li>
+      </ul>
+    </div>
+
+    <div class="ul03">
+      <ul>
+        <h2 class="headingsecond"> Contact Info</h2>
+        <li>FAQ's About</li>
+        <li>Contact Us</li>
+        <li>Re.in </li>
+
+      </ul>
+    </div>
+
+    <div class="stayconnect">
+      <ul class="ulinimg">
+        <h2 class="socialicon"> Stay connected</h2>
+        <li> <img src="img/insta.png" width="30px" height="30px" alt=""> </li>
+        <li> <img src="img/fb.png" width="30px" height="30px" alt=""></li>
+        <li><img src="img/behance.png" width="30px" height="30px" alt=""> </li>
+        <li><img src="img/twitter.png" width="30px" height="30px"> </li>
+
+      </ul>
+    </div>
+    </div3 </body>
+
+</html>
